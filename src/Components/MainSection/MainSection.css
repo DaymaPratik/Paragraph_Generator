@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-box{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: 50px auto;
+    background: rgb(204, 164, 247);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgb(5, 4, 5);
+}
+.ip-box{
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.ip-box input,button{
+    font-size: 20px;
+    padding: 7px;
+    border: none;
+}
+input{
+    color: #9600FF;
+}
+button{
+    background: linear-gradient(90deg,#9600FF,#626ea8,black);
+    color: white;
+    transition: 0.2s ease-in;
+}
+button:hover{
+cursor: pointer;
+background: rgb(11, 3, 3);
+color: #d195fb;
+scale: 101%;
+}
+.op-box{
+    padding: 20px;
+    /* border: 2px solid yellowgreen; */
+}
+.op-para{
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+    /* border: 2px solid blue; */
+    margin:20px auto;
+    background: linear-gradient(90deg,#9600FF,#626ea8,black);
+    color: white;
+    box-shadow: 0px 0px 20px 3px black;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+.op-para:hover{
+    scale: 103%;
+    cursor: pointer;
+    background: black;
+}
+
+@media screen and (max-width:1024px) {
+    .main-box{
+        width: 90%;
+    }
+}
+@media screen and (max-width:850px) {
+    .label-no{
+        display: block;
+        margin: 10px auto;
+    }
+    .op-para{
+        font-size: 22px;
+    }
+    .op-box{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ip-box input{
+        width: 100px;
+    }
+    .op-para{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .op-box{
+        padding: 7px;
+    }
+}
+@media screen and (max-width:350px) {
+    .ip-box input{
+        width: 50px;
+    }
+   
+    .op-para{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .op-box{
+        padding: 5px;
+    }
+}
